@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+a,button{
+    cursor: pointer;
+}
+
+@keyframes pan{
+    100% { background-position: 15% 50%;}
+}
+
+/* adding the bg img and aligin the items in  the center */
+body{
+    display: grid;
+    place-items: center;
+    margin: 0%;
+    padding: 0 24px;
+    background-image: url(vara1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* animation: pan 6s infinite alternate linear; */
+}
+
+/* Screen resposive  */
+@media(width >= 500px) {
+    body{
+        padding: 0;
+    }
+}
+
+/* Creating the border and align items in the center */
+.form-card{
+width: 100%;
+padding: 70px 30px 44px;
+border-radius: 20px;
+background: aliceblue;
+text-align: center;
+}
+
+/* making the form card responsive */
+@media(width>=500px){
+    .form-card{
+        margin: 0;
+        width: 400px;
+    }
+}
+
+/* applying css to h2 tag */
+.form-card>h2{
+    margin: 0 0 12px;
+    font-size: 30px;
+    font-weight: 500px;
+}
+
+/* applying css to h3 tag */
+.form-card>h3{
+    margin: 0 0 30px;
+    font-size: 30px;
+    font-weight: 500px;
+    color: rgba(0, 0, 0, 0.38);
+    
+}
+
+.login-form{
+    width: 100%;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+}
+
+.login-form>a{
+    color: blue;
+}
+
+.login-form>button,
+.login-form>input{
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    border-radius: 8px;
+}
+
+.login-form>input{
+    border-radius: 2px solid red;
+}
+
+/* applying css to button tag */
+.login-form>button{
+    width: 100%;
+    height: 56px;
+    border: 0;
+    background: blue;
+    color: black;
+    font-weight: 600;
+}
